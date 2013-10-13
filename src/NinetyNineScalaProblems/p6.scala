@@ -4,22 +4,25 @@ package NinetyNineScalaProblems
 
 TASK:
 
-    Reverse a list.
+    Find out whether a list is a palindrome.
     Example:
 
-    scala> reverse(List(1, 1, 2, 3, 5, 8))
-    res0: List[Int] = List(8, 5, 3, 2, 1, 1)
+    scala> isPalindrome(List(1, 2, 3, 2, 1))
+    res0: Boolean = true
   */
 object p6 {
 
+
   def main(args: Array[String]) {
-    println(reverse(List(1, 1, 2, 3, 5, 8)))
+    println(isPalindrome(List(1, 2, 3, 2, 1)))
 
   }
 
-  def reverse(list: List[Int]): List[Int] = {
-    list.reverse
+  def isPalindrome(list: List[Int]): Boolean = {
+    list.reverse == list
   }
+
+
 
 
 }
